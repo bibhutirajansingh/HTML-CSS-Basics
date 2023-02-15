@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- in html generally everything in small case.  Though it is case insensitive -->
+<!-- once you save it and open in live server you can open DevTool/inspect element 
+    and can see the style used for specific element there & you can toggle there too
+    also beside style you can see the exact file name too where this style is applied-->
+
+<!-- Validating Web Page: on validator.w3.org we can upload our file and can see if any 
+    errors are ther in html file-->
+
+<!-- CSS Validation: jigsaw.w3.org/css-validator-->
+<!-- though we have integrated CSS in the same html file using <style> tag but if CSS files
+     are bigger we may need to create a seperate CSS file and that can be integrated here  -->
+<html lang="en">
+  <head>
+    <!-- just after head page we have meta elements for giving info about this webpage
+    e.g. characterset: computer only understand numeric things, so we have ASCII(UTF-8 represents
+     all character in the world) for every character -->
+    <meta charset="UTF-8" />
+    <!-- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- viewport is the visible area of the webpage, so, here we are intializing intial width of 
+        the webpage and scale factor for resizing -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this title will be visible on page title (Tab)) -->
+    <title>BibhutiWebDev</title>
+    <!-- just after title here we will add bunch of CSS -->
+    <style>
+      img {
+        width: 100px;
+        border-radius: 50px;
+        /*it prevents bad squashing of image*/
+        object-fit: cover;
+        /* shifting the img towards left & use margin to seperate img & text */
+        float: left;
+        margin-right: 10px;
+      }
+
+      /* here we will apply CSS rules on paragraph element*/
+      p {
+        font-weight: bold;
+      }
+
+      /* this CSS will be only applicable on username class of paragraph element */
+      p.username {
+        font-size: smaller;
+      }
+
+      /* if you wish to apply CSS to every class = username irrespective of paragraph
+       elemnet of any other element then you just need to remove initial p
+        
+        .username {
+           font-size: smaller; 
+        }
+        */
+      em {
+        color: red;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- heading element -->
+    <!-- but what if we want to apply css to only username  paragraph element we need to
+        seperate it from other paragraph element by specifying attribute called class(Classification) -->
+    <img src="bibhuti.jpeg" alt="Bibhuti Image" />
+    <p class="username">@bibhutirajansingh</p>
+    <p>I love WebDev here we <em>emphasize on creativity.</em></p>
+    <h1>Profile</h1>
+    <p>He is genuinely enthusiastic.</p>
+    <h2>Interests</h2>
+    <p>Storytelling, Mentoring, Playing Cricket</p>
+
+    <!-- few special characters, you can find on internet for the special char you want -->
+    <!-- to print <HTML>  we need to use trick like &lt; HTML &gt;-->
+    <p>I love teaching &lt;HTML&gt; &copy;</p>
+
+    <!-- hyhperlink: anchor tag you can see that we need to specify relative directory to this file-->
+    <a href="AboutMe/aboutMe.html">AboutMe</a>
+    <!-- Here I am applying download attribute of anchor tag too -->
+    <a href="bibhuti.jpeg" download>MyPhoto</a>
+
+    <!-- here we will add index link(directly jump to that heading) of the HTML & CSS headings for that
+         we need to specify identifier (id)-->
+    <!-- we use #html to locate that identifier in this page -->
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <h2 id="html">HTML</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed minima
+      laudantium quam ratione corrupti animi reiciendis odit aspernatur velit
+      voluptates earum, corporis dicta inventore modi doloremque et eaque ipsum
+      veniam est voluptatem quae aliquam? In, ipsa! Sunt, odit! Atque
+      repellendus esse commodi modi nulla sed possimus voluptatibus corporis,
+      quisquam ratione consequatur quos impedit ab magnam temporibus inventore.
+      Quidem, impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ab unde optio autem eveniet id minima nisi reprehenderit adipisci debitis
+      quos ipsum dolorem suscipit, tenetur quas cupiditate impedit neque, ipsam
+      iure? Atque, nemo! Laudantium, voluptas consectetur nulla suscipit
+      praesentium esse ex odit sequi rem, sapiente ab qui ullam incidunt tenetur
+      quasi adipisci. Nesciunt eos illo ullam quibusdam! Excepturi optio
+      expedita mollitia est eius ratione, dolores fugiat asperiores eligendi
+      ipsam in, voluptas maiores adipisci sequi soluta quam laudantium explicabo
+      rem? Reprehenderit minima inventore odit consequuntur optio laboriosam
+      perspiciatis ipsum magni veritatis. Quis rem nihil officia architecto ad
+      laborum totam porro labore, perferendis temporibus debitis velit
+      praesentium provident dicta veniam. Repellat exercitationem voluptate
+      itaque tempore, laboriosam vel non impedit, et, quas veritatis quia
+      provident vero recusandae harum quidem porro illo minima laudantium qui
+      quod accusamus minus. Reprehenderit ipsum magni necessitatibus, maiores
+      totam eos.
+    </p>
+    <h2 id="css">CSS</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed minima
+      laudantium quam ratione corrupti animi reiciendis odit aspernatur velit
+      voluptates earum, corporis dicta inventore modi doloremque et eaque ipsum
+      veniam est voluptatem quae aliquam? In, ipsa! Sunt, odit! Atque
+      repellendus esse commodi modi nulla sed possimus voluptatibus corporis,
+      quisquam ratione consequatur quos impedit ab magnam temporibus inventore.
+      Quidem, impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Laboriosam deleniti expedita molestiae quis perspiciatis veritatis at
+      distinctio inventore libero cumque corporis eveniet praesentium illum sunt
+      vel atque natus minima, pariatur corrupti enim. Maxime obcaecati est ut
+      harum nihil possimus eaque, ratione consequatur illum, atque non
+      molestias, itaque officia animi. Eaque asperiores veniam rerum, illum quod
+      deleniti corrupti cupiditate in voluptates cumque voluptas ipsam harum?
+      Amet eum obcaecati dolor asperiores atque ipsa tempora sint unde
+      praesentium sequi sunt, cupiditate aliquid. Consequatur, mollitia!
+      Voluptate accusamus numquam aliquid possimus eaque odio, delectus
+      laboriosam fuga, optio laudantium autem ipsum ullam! Labore deserunt, iure
+      laboriosam, laborum, quisquam atque delectus perspiciatis corrupti eveniet
+      eum voluptate et saepe. Accusamus, laborum non dignissimos sit dolorem
+      voluptate reiciendis, earum rem molestiae aliquam ullam dolor cum
+      distinctio eos similique deserunt velit tenetur quisquam itaque?
+      Exercitationem vel commodi quos voluptatum vitae.
+    </p>
+
+    <!-- we can also add href to jum to the up pf the page we just need to use #(pond)-->
+    <a href="#">JumpToTop</a>
+
+    <!--To link external website: here we can't use relative url from our website
+            we have to start with protocol (i.e. https) and if we want to open that in new tab-->
+
+    <a href="https://www.linkedin.com/in/bibhutirajansingh/" target="_blank"
+      >My LinkedIn Profile</a
+    >
+
+    <!--Email can also be added-->
+    <a href="mailto:bibhutirajansingh@gmail.com">EmailMe</a>
+  </body>
+</html>
